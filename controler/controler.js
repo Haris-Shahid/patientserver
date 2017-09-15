@@ -1,7 +1,7 @@
 const patient = require('../models/patientSchema')
 
 module.exports = {
-    createPatientProfile: (req, res, next) => {
+    PatientDetails: (req, res, next) => {
         var userData = req.body;
             console.log(userData)
         patient.create(userData)
